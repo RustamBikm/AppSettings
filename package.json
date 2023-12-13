@@ -1,24 +1,29 @@
 {
-  "name": "topapp",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.45",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "eslint": "^8.55.0",
-    "typescript": "^5.3.3"
-  }
+    "name": "topapp",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
+        "build": "next build",
+        "start": "next start",
+        "stylelint": "stylelint \"**/*.css\" --fix"
+    },
+    "dependencies": {
+        "next": "14.0.4",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.4",
+        "@types/react": "^18.2.45",
+        "@typescript-eslint/eslint-plugin": "^6.14.0",
+        "@typescript-eslint/parser": "^6.14.0",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.55.0",
+        "stylelint": "^16.0.2",
+        "stylelint-config-standard": "^35.0.0",
+        "stylelint-order": "^6.0.4",
+        "typescript": "^5.3.3"
+    }
 }
