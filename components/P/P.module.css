@@ -1,0 +1,14 @@
+.high {
+    font-family: var(--font-family);
+    font-size: 40px;
+}
+
+.medium {
+    font-family: var(--font-family);
+    font-size: 30px;
+}
+
+.small {
+    font-family: var(--font-family);
+    font-size: 20px;
+}

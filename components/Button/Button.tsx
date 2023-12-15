@@ -19,7 +19,7 @@ export const Button = ({children, arrow = 'none', appearance, className, ...prop
                     [styles.down]:arrow == 'down',
                     [styles.right]:arrow == 'right',
                 })}>
-                    
+                    <ArrowIcon/>
                 </span>}
         </button>
     );
