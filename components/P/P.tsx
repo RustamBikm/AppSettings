@@ -1,15 +1,15 @@
+import { PProps } from './P.props';
 import styles from './P.module.css';
 import cn from 'classnames';
-import { PProps } from './P.props';
 
 
-export const P = ({children, size, className, ...props}:PProps):JSX.Element => {
+export const P = ({children, size = 'm', className, ...props}:PProps):JSX.Element => {
     return (
         <p 
             className={cn(styles.p, className, {
-                [styles.small]:size == 'small',
-                [styles.medium]:size == 'medium',
-                [styles.high]:size == 'high',
+                [styles.s]:size == 's',
+                [styles.m]:size == 'm',
+                [styles.l]:size == 'l',
             })}
             {...props}
         >

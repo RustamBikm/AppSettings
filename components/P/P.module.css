@@ -1,14 +1,20 @@
-.high {
-    font-family: var(--font-family);
-    font-size: 40px;
+.p {
+    margin: 0;
 }
 
-.medium {
-    font-family: var(--font-family);
-    font-size: 30px;
+
+
+.l {
+    font-size: 18px;
+    line-height: 29px;
 }
 
-.small {
-    font-family: var(--font-family);
-    font-size: 20px;
+.m {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.s {
+    font-size: 14px;
+    line-height: 24px;
 }
