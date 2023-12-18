@@ -1,6 +1,7 @@
 // import Image from 'next/image';
 // import { Inter } from 'next/font/google';
-import { Button, Htag, P, Tag } from '../components';
+import { useEffect, useState } from 'react';
+import { Button, Htag, P, Rating, Tag } from '../components';
 
 // const inter = Inter({ 
 //     subsets: ['latin'],
@@ -10,10 +11,12 @@ import { Button, Htag, P, Tag } from '../components';
 // });
 
 export default function Home(): JSX.Element {
+    const [rating, setRating] = useState<number>(4);
+
     return (
         <div>
-            <Htag tag='h1'>ТЕКСТ</Htag>
-            <Button appearance='primary' className='sdsds' arrow='right'>Кнопка</Button>
+            <Htag tag='h1'>РАБОТА</Htag>
+            <Button appearance='primary' arrow='right'>Кнопка</Button>
             <Button appearance='ghost' arrow='right'>Кнопка</Button>
             <P size='l'>HIGH</P>
             <P>MEDIUM</P>
@@ -24,6 +27,9 @@ export default function Home(): JSX.Element {
             <Tag color='gray' size='m'>gray</Tag>
             <Tag color='green' size='m'>green</Tag>
             <Tag color='primary' size='m'>primary</Tag>
+
+
+            <Rating rating={rating} isEditable setRating={setRating} />
         </div>
     );
 }
